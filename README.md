@@ -1,2 +1,48 @@
-# paintinsky
-This library add lot of draw methods for kandinsky library. (click on the following link for more info)
+# Paintinsky for Numworks and PC
+This library add lot of draw methods for kandinsky library.
+
+**Note: ** if you read the code you risk not understanding anything, it's normal the library has been designed to be as optimized and small as possible, hence this somewhat strange syntax.
+
+### Usable content
+#### Public methods
+
+**get_hpixel**:
+* Parameters: ``x``, ``y``
+* Description: Get pixel at (x, y) in hex format
+
+**draw_circle():**
+* Parameters: ``x``, ``y``, ``radius``, ``color``, ``back`` **[default: None]**, ``spader`` **[default: 1]**, ``semi`` **[default: False]**, ``reverse`` **[default: False]**
+* Description: Draw circle at (x, y). ``back`` is backgroung color, None is transparent. ``spader`` is the spader of circle line. ``semi`` for a semi circle. ``reverse`` to reverse ``color`` and ``back`` color
+* Example *(if reverse=True)*: If I call draw_circle(10,10,20,"red",reverse=True) the circle line will transparent and rest of rect is red.
+
+**draw_circle():**
+* Parameters: ``x``, ``y``, ``radius``, ``color``, ``back`` **[default: None]**, ``semi`` **[default: False]**, ``reverse`` **[default: False]**
+* Description: Same as draw_circle() but is filled
+
+**draw_rect():**
+* Parameters: ``x``, ``y``, ``w``, ``h``, ``color``, ``spader`` **[default: 1]**
+* Description: Draw just a rectangle at (x, y). ``spader`` is the spader of rectangle line
+
+**draw_line():**
+* Parameters: ``x1``, ``y1``, ``x2``, ``y2``, ``color``, ``spader`` **[default: 1]**
+* Description: Draw a line at (x1, y1) to (x2, y2)
+
+**get_screen():**
+* Parameters: ``x``, ``y``, ``w``, ``h``, ``compress`` **[default: False]**
+* Description: Get all pixels of part of screen at (x, y) to (w, h). ``compress`` to compress pixels array to string hex hash.
+* Note: By default this method return an array of array of pixel, and if the selection if big, script can raise an OutOfMemoryError because it take lot of RAM. So is better to use ``compress`` to compress all at pixel hex hash
+
+**parse_screen():**
+* Parameters: ``x``, ``y``, ``hash`` , ``zoom`` **[default: 1]**
+* Description: Parse pixels hash or array at (x, y). ``zoom`` to enlarge pixels
+* Note: The method auto detect if is compressed pixel hex hash by using type, since is an str. For ``zoom`` parameter is by default at 1 because 1 pixel, so if you increase thee value (e.g. zoom=4) 1 compressed pixel take 4 pixel in screen at uncompress
+
+**draw_text():**
+* Parameters: ``text``, ``x``, ``y``, ``size`` **[default: 1]**, ``color`` **[default: (0,0,0)]**, ``bg`` **[default: (248,252,248)]**, ``hideModel`` **[default: True]**
+* Description: Draw a sized text at (x, y)
+
+#### Other methods
+
+
+### Why for pc?
+Because [here](https://github.com/ZetaMap/Kandinsky-Numworks) exist.
