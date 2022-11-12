@@ -1,7 +1,7 @@
 # Paintinsky for Numworks and PC
 This library is an wrapper of kandinsky library and add lot of draw methods.
 
-**Note 1:** if you read the code you risk not understanding anything, it's normal the library has been designed to be as optimized and small as possible, hence this somewhat strange syntax.
+**Note 1:** if you read the code you risk not understanding anything, it's normal the library has been designed to be as optimized and small as possible, hence this somewhat strange syntax. <br>
 **Note 2:** gp, sp, fr and ds are just kandinsky's functions with a shortened name to take as little storage as possible. So there is no need to import kandinsky after this library, you can use these functions.
 
 **WARNING:** Compress algorithm of method get_screen() is under in development so don't use it for moment. 
