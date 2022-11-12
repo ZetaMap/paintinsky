@@ -1,5 +1,5 @@
 # Paintinsky for Numworks and PC
-This library add lot of draw methods for kandinsky library.
+This library is an wrapper of kandinsky library and add lot of draw methods.
 
 **Note:** if you read the code you risk not understanding anything, it's normal the library has been designed to be as optimized and small as possible, hence this somewhat strange syntax.
 
