@@ -41,7 +41,7 @@ This library add lot of draw methods for kandinsky library.
 **draw_text():**
 * Parameters: ``text``, ``x``, ``y``, ``size`` **[default: 1]**, ``color`` **[default: (0,0,0)]**, ``bg`` **[default: (248,252,248)]**, ``hideModel`` **[default: True]**
 * Description: Draw a sized text at (x, y). ``color`` is the text color, None value is transparent color. ``bg`` is the background color, None value is transparent color. ``hideModel`` to hide first text used to copy content and increase size (more info in Note).
-* Note: in kandinsky is not possible to choose the size of font, so only way is drawing first text with default size and copy content for increase size of text. So, the ``hide Model`` parameter copies and saves the old area which will be replaced by the first text, then re-replaced by the saved area. This allows you to enlarge the size of the text without having to hide the model afterwards. **The only problem with this method is that it takes a long time, so if you have a script that writes a lot of text, it's best to keep hideModel=False and hide the pattern manually**
+* Note: in kandinsky is not possible to choose the size of font, so one way is drawing first text with default size and copy content for increase size of text. So, the ``hide Model`` parameter copies and saves the old area which will be replaced by the first text, then re-replaced by the saved area. This allows you to enlarge the size of the text without having to hide the model afterwards. **The only problem with this method is that it takes a long time, so if you have a script that writes a lot of text, it's best to keep hideModel=False and hide the pattern manually**
  
 #### Other methods
 *Is only use for library methods, but you can use they if you want.*
