@@ -58,4 +58,4 @@ This library add lot of draw methods for kandinsky library.
 *Note: gp, sp and fr are just kandinsky's functions with a shortened name to take as little storage as possible. So there is no need to import kandinsky after this library, you can use these functions.*
 
 ### Why for pc?
-Because [here](https://github.com/ZetaMap/Kandinsky-Numworks) exist.
+Because [this](https://github.com/ZetaMap/Kandinsky-Numworks) exist.
