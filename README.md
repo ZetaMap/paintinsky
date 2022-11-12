@@ -7,7 +7,7 @@ This library is an wrapper of kandinsky library and add lot of draw methods.
 ### Usable content
 #### Public methods
 
-**get_hpixel**:
+**get_hpixel():**:
 * Parameters: ``x``, ``y``
 * Description: Get pixel at (x, y) in hex format
 
