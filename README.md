@@ -55,9 +55,9 @@ This library is an wrapper of kandinsky library and add lot of draw methods.
 * Description: Convert an filled or not hex value to integer.
 * Note: String hex value must don't have '0x' a start, this will add automatically for conversion
 
-### Note
-gp, sp, fr and ds are just kandinsky's functions with a shortened name to take as little storage as possible. So there is no need to import kandinsky after this library, you can use these functions. <br>
-**WARNING:** Compress algorithm of method get_screen() is under in development so don't use it for moment. 
+### Warnings
+* gp, sp, fr and ds are just kandinsky's functions with a shortened name to take as little storage as possible. So there is no need to import kandinsky after this library, you can use these functions. <br>
+* Compress algorithm of method get_screen() is under in development so don't use it for moment. 
 
 ### Why for pc?
 Because [this](https://github.com/ZetaMap/Kandinsky-Numworks) exist.
