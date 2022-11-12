@@ -7,7 +7,7 @@ def draw_circle(x,y,radius,color,back=None,spader=1,semi=False,reverse=False):
  r,rr,s=ra**2,ra*2,(s+9)**2 if s>0 else 0
  for i in range(r<<(1 if semi else 2)):
   tx,ty=(i%rr)-ra,(i//rr)-ra
-  if r+s>=tx**2+ty**2>=r if reverse else r+s<=tx**2+ty**2<=r:sp(x+tx,y+ty,color)
+  if r+s<=tx**2+ty**2>=r if reverse else r+s>=tx**2+ty**2<=r:sp(x+tx,y+ty,color)
   elif back!=None:sp(x+tx,y+ty,back)
 fill_circle=lambda x,y,radius,color,back=None,semi=False,reverse=False:draw_circle(x,y,radius,color,back,radius,semi,reverse)
 def draw_rect(x,y,w,h,color,spader=1):
