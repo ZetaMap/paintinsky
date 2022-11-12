@@ -1,7 +1,8 @@
 # Paintinsky for Numworks and PC
 This library add lot of draw methods for kandinsky library.
 
-**Note: ** if you read the code you risk not understanding anything, it's normal the library has been designed to be as optimized and small as possible, hence this somewhat strange syntax.
+**Note:** if you read the code you risk not understanding anything, it's normal the library has been designed to be as optimized and small as possible, hence this somewhat strange syntax.
+
 
 ### Usable content
 #### Public methods
@@ -39,10 +40,22 @@ This library add lot of draw methods for kandinsky library.
 
 **draw_text():**
 * Parameters: ``text``, ``x``, ``y``, ``size`` **[default: 1]**, ``color`` **[default: (0,0,0)]**, ``bg`` **[default: (248,252,248)]**, ``hideModel`` **[default: True]**
-* Description: Draw a sized text at (x, y)
-
+* Description: Draw a sized text at (x, y). ``color`` is the text color, None value is transparent color. ``bg`` is the background color, None value is transparent color. ``hideModel`` to hide first text used to copy content and increase size (more info in Note).
+* Note: in kandinsky is not possible to choose the size of font, so only way is drawing first text with default size and copy content for increase size of text. So, the ``hide Model`` parameter copies and saves the old area which will be replaced by the first text, then re-replaced by the saved area. This allows you to enlarge the size of the text without having to hide the model afterwards. **The only problem with this method is that it takes a long time, so if you have a script that writes a lot of text, it's best to keep hideModel=False and hide the pattern manually**
+ 
 #### Other methods
+*Is only use for library methods, but you can use they if you want.*
 
+**HEX():**
+* Parameters: ``v``, ``l`` **[default: 2]**
+* Description: Convert integer to a filled hex value. ``l`` max hex length
+
+**INT():**
+* Parameters: ``v``
+* Description: Convert an filled or not hex value to integer.
+* Note: String hex value must don't have '0x' a start, this will add automatically for conversion
+
+*Note: gp, sp and fr are just kandinsky's functions with a shortened name to take as little storage as possible. So there is no need to import kandinsky after this library, you can use these functions.*
 
 ### Why for pc?
 Because [here](https://github.com/ZetaMap/Kandinsky-Numworks) exist.
