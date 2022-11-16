@@ -34,7 +34,7 @@ This library is an wrapper of kandinsky library and add lot of draw methods.
 **get_screen():**
 * Parameters: ``x``, ``y``, ``w``, ``h``, ``compress`` **[default: False]**
 * Description: Get all pixels of part of screen at (x, y) to (w, h). ``compress`` to compress pixels array to string hex hash.
-* Note: By default this method return an array of array of pixel, and if the selection if big, script can raise an OutOfMemoryError because it take lot of RAM. So is better to use ``compress`` to compress all at pixel hex hash
+* Note: By default this method return an array of array of pixel so if the selection is big, this method can raise an OutOfMemoryError because it take lot of RAM. So is better to use ``compress`` to compress all at pixel hex hash
 
 **parse_screen():**
 * Parameters: ``x``, ``y``, ``hash`` , ``zoom`` **[default: 1]**
