@@ -1,3 +1,5 @@
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=ZetaMap.paintinsky) ![Download](https://shields.io/github/downloads/ZetaMap/paintinsky/total)
+
 # Paintinsky for Numworks and PC
 This library is an wrapper of kandinsky library and add lot of draw methods.
 
