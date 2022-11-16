@@ -19,7 +19,7 @@ This library is an wrapper of kandinsky library and add lot of draw methods.
 * Description: Draw circle at (x, y). ``back`` is backgroung color, None is transparent. ``spader`` is the spader of circle line. ``semi`` for a semi circle. ``reverse`` to reverse ``color`` and ``back`` color
 * Example *(if reverse=True)*: If I call draw_circle(10,10,20,"red",reverse=True) the circle line will transparent and rest of rect is red.
 
-**draw_circle():**
+**fill_circle():**
 * Parameters: ``x``, ``y``, ``radius``, ``color``, ``back`` **[default: None]**, ``semi`` **[default: False]**, ``reverse`` **[default: False]**
 * Description: Same as draw_circle() but is filled
 
