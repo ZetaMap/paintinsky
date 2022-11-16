@@ -59,10 +59,6 @@ jobs:
             --user "${{ github.actor }}:${{ secrets.PAINTINSKY_STATS_TOKEN }}" \
             -H "Content-Type: application/json" \
             -d @post_clone.json https://api.github.com/gists/${{ steps.set_id.outputs.GIST }} > /dev/null 2>&1
-          
-          # Not need to do this
-          if [ ! -f CLONE.md ]; then
-          fi
 
       - name: Push
         uses: ad-m/github-push-action@master
